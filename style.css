@@ -1,0 +1,63 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+  font-family: 'Piazzolla', serif;
+}
+h2, h3{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* configuraçao do banner inicial */
+.semicirculo{
+  background-color: red;
+  border-radius: 50% / 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.titulo {
+  background: url('img/bgestrada.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.textobaner{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/* configuraçao dos produtos*/
+.conteudo{
+  background: url('img/bgpneu.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+
+/* bordas personalizadas*/
+.bordaperso-1{
+  border-bottom: 1px solid #007bff;
+  border-right: 1px solid #007bff;
+  border-radius: 25px;
+}
+
+.bordaperso-2{
+  border-right: 1px solid #b3b3b3;
+}
+
+.bordaperso-3{
+  border-top: 1px solid #007bff;
+  border-left: 1px solid #007bff;
+  border-radius: 25px;
+}
+
+.bordaperso-4{
+  border-bottom: red solid 1px;
+  border-radius: 15px;
+}

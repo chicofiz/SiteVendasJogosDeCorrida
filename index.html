@@ -1,0 +1,416 @@
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
+
+  <link rel="icon" type="image/gif" href="img/favicon-32x32.png">
+  <title>Racing Games</title>
+</head>
+
+<body>
+
+  <!--titulo e banner inicial-->
+  <div class="row mb-0 ml-0 mr-0 titulo">
+
+    <div class="container bg-white semicirculo">
+      <div class="row">
+        <div class="col-12 text-center mt-3 text-primary">
+          <h1 class="display-3 pb-3">
+            <i class="fas fa-truck-pickup text-dark"></i>
+            Racing Games
+          </h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+    </div>
+
+    <div class="col-sm-4">
+      <div class="col-12 text-center  text-white textobaner">
+        <h2 class="display-5"> Sobre</h2>
+        <div class="text-white">
+          <p>Nessa loja você encontra uma seleção de jogos feita especialmente para os amantes de velocidade</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+    </div>
+  </div>
+
+  <!--Coleçao de jogos-->
+
+
+  <div class="jumbotron jumbotron-fluid pt-4 conteudo">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center bg-white bordaperso-3 pt-2">
+          <h1 class="display-4"><i class="fas fa-compact-disc text-dark"></i> Catálogo</h1>
+          <hr>
+          <p class="lead">Nessa seção contem os melhores jogos para você</p>
+          <p class="lead">todos com informações sobre os requisitos minimos para roda-los</p>
+        </div>
+      </div>
+      <!--Lista dos jogos-->
+      <!--primeiro jogo-->
+      <div class="row mt-5 bordaperso-1 p-3 bg-white">
+        <div class="col-sm-4 bordaperso-2">
+          <h3>F1®2020</h3>
+          <img src="img/f12020.jpg" alt="fifa" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 bordaperso-2 text-center">
+          <div id="carousel_1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <h3>Sobre o jogo </h3>
+                <p>
+                  F1® 2020 é o jogo de F1® mais abrangente até agora, colocando os jogadores firmemente no assento do
+                  piloto enquanto competem contra os melhores pilotos do mundo.</p>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <h3>Requisitos de sistema </h3>
+                <p>Processador: Intel Core i3 2130 / AMD FX 4300</p>
+                <p>Memória: 8 GB de RAM</p>
+                <p>Video Card: NVIDIA GT 640 </p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3>Comprar</h3>
+          </div>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3 id="preco_j1"></h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-2 text-center">
+              <label for="quantidade-1">
+                Quantidade
+              </label>
+              <input type="number" id="jogo_1" min="0" data-bind="value:replyNumber" class="form-control" placeholder=""
+                onchange="adicionar()" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--segundo jogo-->
+
+      <div class="row mt-5 bordaperso-1 p-3 bg-white">
+        <div class="col-sm-4 bordaperso-2">
+          <h3>Need for Speed™ Heat</h3>
+          <img src="img/nfsheat.jpg" alt="fifa" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 bordaperso-2 text-center">
+          <div id="carousel_2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <h3>Sobre o jogo </h3>
+                <p>Um jogo de corrida emocionante que coloca você contra a polícia corrupta de uma cidade, enquanto luta
+                  para fazer parte da elite das corridas de rua.</p>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <h3>Requisitos de sistema </h3>
+                <p>Processador: Core i5-3570</p>
+                <p>Memória: 8 GB de RAM</p>
+                <p>Video Card: AMD Radeon 7970/Radeon R9 280x ou NVIDIA: GeForce GTX 760</p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3>Comprar</h3>
+          </div>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3 id="preco_j2"></h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-2 text-center">
+              <label for="quantidade-1">
+                Quantidade
+              </label>
+              <input type="number" id="jogo_2" min="0" data-bind="value:replyNumber" class="form-control" placeholder=""
+                onchange="adicionar()" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--terceiro jogo-->
+
+      <div class="row mt-5 bordaperso-1 p-3 bg-white">
+        <div class="col-sm-4 bordaperso-2">
+          <h3>GRID 2</h3>
+          <img src="img/grid2.jpg" alt="fifa" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 bordaperso-2 text-center">
+          <div id="carousel_3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <h3>Sobre o jogo</h3>
+                <p>Seja rápido, seja o primeiro e seja famoso, agora que a corrida regressa com o GRID 2.</p>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <h3>Requisitos de sistema </h3>
+                <p>Processador: Intel Core 2 Duo @ 2.4Ghz</p>
+                <p>Memória: 2 GB de RAM</p>
+                <p>Video Card: Intel HD Graphics 3000 / AMD HD2600 / NVIDIA Geforce 8600</p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3>Comprar</h3>
+          </div>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3 id="preco_j3"></h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-2 text-center">
+              <label for="quantidade-1">
+                Quantidade
+              </label>
+              <input type="number" id="jogo_3" min="0" data-bind="value:replyNumber" class="form-control" placeholder=""
+                onchange="adicionar()" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--quarto jogo-->
+
+      <div class="row mt-5 bordaperso-1 p-3 bg-white">
+        <div class="col-sm-4 bordaperso-2">
+          <h3>DiRT Rally 2.0</h3>
+          <img src="img/dirty2.0.jpg" alt="fifa" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 bordaperso-2 text-center">
+          <div id="carousel_4" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <h3>Sobre o jogo</h3>
+                <p>Te desafia a percorrer várias pistas de rali icônicas ao redor do mundo, nos veículos off-road mais
+                  potentes já feitos, sabendo que o menor erro pode acabar com sua aventura.</p>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <h3>Requisitos de sistema </h3>
+                <p>Processador: AMD FX4300 ou Intel Core i3 2130</p>
+                <p>Memória: 8 GB de RAM</p>
+                <p> Placa de vídeo: NVIDIA GTX650Ti </p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_4" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_4" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3>Comprar</h3>
+          </div>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3 id="preco_j4"></h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-2 text-center">
+              <label for="quantidade-1">
+                Quantidade
+              </label>
+              <input type="number" id="jogo_4" min="0" data-bind="value:replyNumber" class="form-control" placeholder=""
+                onchange="adicionar()" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--quinto jogo-->
+
+      <div class="row mt-5 bordaperso-1 p-3 bg-white">
+        <div class="col-sm-4 bordaperso-2">
+          <h3>The Crew™ 2</h3>
+          <img src="img/thecrew.jpg" alt="fifa" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 bordaperso-2 text-center">
+          <div id="carousel_5" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <h3>Sobre o jgo</h3>
+                <p>É o mais recente capítulo desta série revolucionária e capta todas as emoções dos desportos
+                  motorizados americanos num dos mundos abertos mais empolgantes de sempre.</p>
+              </div>
+              <div class="carousel-item text-center p-4">
+                <h3>Requisitos de sistema </h3>
+                <p>Processador: AMD FX-6100 @ 3.3 GHz</p>
+                <p>Memória: 8 GB de RAM</p>
+                <p> Placa de vídeo: NVIDIA GeForce GTX 660 ou AMD HD 7870 </p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_5" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_5" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3>Comprar</h3>
+          </div>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3 id="preco_j5"></h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-2 text-center">
+              <label for="quantidade-1">
+                Quantidade
+              </label>
+              <input type="number" id="jogo_5" min="0" data-bind="value:replyNumber" class="form-control" placeholder=""
+                onchange="adicionar()" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--sexto jogo-->
+
+      <div class="row mt-5 bordaperso-1 p-3 bg-white">
+        <div class="col-sm-4 bordaperso-2">
+          <h3>Wreckfest</h3>
+          <img src="img/wreckfest.jpg" alt="fifa" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 bordaperso-2 text-center">
+          <div id="carousel_6" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <h3>Sobre o jogo </h3>
+                <p class="pt-2">Participe de batidas épicas, brigas pela linha de chegada e novas formas de ver metal se
+                  retorcer.</p>
+              </div>
+              <div class="carousel-item text-center pb-1">
+                <h3>Requisitos de sistema </h3>
+                <p>Processador: Intel® Core™2 Duo 2.7 GHz ou AMD</p>
+                <p>Memória: 4 GB de RAM</p>
+                <p> Placa de vídeo: NVIDIA GTX™ 460 ou AMD HD 6850s</p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_6" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_6" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3>Comprar</h3>
+          </div>
+          <div class="row justify-content-center text-danger mb-2">
+            <h3  id="preco_j6"></h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-2 text-center">
+              <label for="quantidade-1">
+                Quantidade
+              </label>
+              <input type="number" id="jogo_6" min="0" data-bind="value:replyNumber" class="form-control" placeholder=""
+                onchange="adicionar()" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--finalizar compras-->
+      <div class="row mt-5 bordaperso-4 pb-2 bg-white">
+        <div class="col-sm-8 text-left">
+          <h3>Valor Total:</h3>
+          <h3 id="valor_total">R$ 0,00</h3>
+        </div>
+        <div class="col-sm-4 text-right">
+          <br>
+          <button type="submit" class="btn btn-danger" onclick="comprar()">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- rodapé -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-1 text-center">
+        <p>Contato: weselyaje@gmail.com</p>
+        <hr>
+      </div>
+
+      <div class="col-12 mt-1">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">Racing Games</p>
+          <footer class="blockquote-footer">Criador por <cite title="source title">Wesley Felipe</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
